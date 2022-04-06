@@ -1,0 +1,127 @@
+/* REGRA CSS */
+
+/* ALTERANDO o Box Model para Todos Os Elementos Da páginas */
+*,*::after,*::before {box-sizing: border-box;}
+
+
+/* SELETOR TAG */
+body{
+    background-image: url(../imagens/noite.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana,
+     sans-serif;
+    
+}
+li{color: rgb(13, 13, 14);}
+p{
+    color: rgb(215, 224, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: rgba(88, 150, 179, 0.788);
+    text-shadow:black 2px 2px 0px,white -2px -2px 10px
+
+}
+h1{
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom:solid 5px;
+    font-size: 60px;  
+    text-shadow: rgb(46, 71, 155)  5px 6px 2px;
+} 
+
+h3{
+    text-align: center;
+    color: aliceblue;
+    text-shadow:black 3px 3px 0px, black -2px -2px 10px
+}
+h4{
+    color: aliceblue;
+    text-shadow:black 3px 3px 0px, black -2px -2px 10px
+}
+
+
+/* SELETOR IDENTIFICADO/ID de uso unico */
+
+#container{
+
+    background-color: rgba(232, 235, 238, 0.301)
+    /* Quando combinamos largura e margem
+    automaticoo efeito pratico e a centralaizaçao
+    da caixa */
+    ;width: 70%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px; 
+    box-shadow: rgba(54, 72, 110, 0.603) 15px 15px 5px 
+}
+/* Seletor tag finalidade
+desta regra: tornar as imagens flexíveis */
+img{ max-width: 100%;}
+
+/* Seletor Classe pode ser usado mais de uma vez */
+.centralizar { text-align: center; } 
+
+.sombra-texto{ text-shadow: black 3px 3px 4px; }
+
+.canto-arredondado{ border-radius: 10px; }
+
+.destaque {
+    background-color: rgba(95, 158, 160, 0.671);
+    border: solid 1px;
+    padding: 5px;
+}
+
+/* Seletor DESCENDENTE */
+nav a {/* REGRA Inicial do Link*/
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;  
+    background-color: rgb(13, 13, 14);
+
+ /* Primeiro valor para CIMA/Baixo 
+ segundo valor: Esquerda/Direita*/
+    padding: 15px 30px ;
+
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
+    /* Regra De acionamento do link 
+pseudo-classe :hover*/
+
+nav a:hover {
+    background-color:rgb(39, 113, 138);
+    color: black;
+
+}
+
+p a{
+    color:rgb(219, 17, 17);
+    font-weight: bolder;
+    text-shadow:rgb(199, 135, 18) 2px 2px 0px;
+    
+}
+figure{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+figure img {filter: grayscale(100%);}
+figure img:hover{filter: grayscale(0);}
+
+
+li a{
+    color: rgb(15, 15, 15);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder ;
+    text-shadow: white 2px 2px 0px;
+}
+
+

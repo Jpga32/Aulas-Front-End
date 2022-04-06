@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<style>
+/* Regras de Uso Geral 
+oque codificamos aqui , é tudo que sera usado no
+site Não importando o muito o tamanho da tela.
+Neste momento, nao usamos média queries*/
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+html{font-size:  15px;}
+
+#container{
+box-shadow: black 0 0 5px;
+padding: 3px;
+
+}
+header{
+    background-color:dodgerblue ;
+    text-align: center;
+    height: 100px;
+    border: solid ;
+}
+
+/* CSS RESET */
+body ,h1 ,h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1{ font-size: 2rem;}
+
+h2{ font-size: 1.2rem;}
+
+p{ font-size: 1.1rem;}
+
+nav{background-color: lightskyblue;}
+
+article{padding: 5px;}
+
+.coluna-um  {
+    background-color: gold;
+    border: solid 2px;
+}
+
+.coluna-dois{
+    background-color:darkorange;
+    border: solid 2px;
+}
+
+.coluna-tres{
+    background-color:orangered;
+    border: solid 2px;
+}
+
+footer{
+    background-color: lightgreen;
+    border: solid 2px;
+}
+/* 1° Média Query  Telas a partir de
+700px da Largura*/
+
+@media screen and (min-width: 700px) {
+  html{font-size: 18px;}
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{ width: 50%;}
+
+    main { /* Flex Container */
+        display: flex;  /* Permite quebra no fluxo */
+        flex-wrap: wrap;
+    }
+ .coluna-um,.coluna-dois{ width: 50%;}
+}
+
+@media screen and (min-width: 822px){ 
+    html{ font-size: 20px;}
+
+    .coluna-um,.coluna-dois,.coluna-tres{ width:    33.33%;}
+/* 
+   article{ width: 33.33%;} */
+
+      #container{
+       max-width: 1200px;
+        margin: auto;
+ 
+    } 
+}
+ 
+
+
+</style>
+</head>
+<body>
+    <div id="container">
+    <!-- Cabeçalho -->
+    <HEAder>
+        <H1>Site XYZ</H1>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </nav>
+    </HEAder>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+        <article class="coluna-um">
+            <h2 >UM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, fuga. Deserunt nesciunt voluptates, dolore provident tempora suscipit animi totam earum perferendis doloremque veritatis ipsa consequuntur nulla nobis! Repudiandae quo vero expedita excepturi! Fugiat veniam dicta quae deleniti impedit, laborum consequuntur quaerat ab officia voluptatibus obcaecati nostrum. Accusamus eos voluptas quae.</p>
+        </article>
+
+        <article  class="coluna-dois">
+            <h2>DOIS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, fuga. Deserunt nesciunt voluptates, dolore provident tempora suscipit animi totam earum perferendis doloremque veritatis ipsa consequuntur nulla nobis! Repudiandae quo vero expedita excepturi! Fugiat veniam dicta quae deleniti impedit, laborum consequuntur quaerat ab officia voluptatibus obcaecati nostrum. Accusamus eos voluptas quae.</p>
+        </article>
+
+        <article class="coluna-tres">
+            <h2>TRÊS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, fuga. Deserunt nesciunt voluptates, dolore provident tempora suscipit animi totam earum perferendis doloremque veritatis ipsa consequuntur nulla nobis! Repudiandae quo vero expedita excepturi! Fugiat veniam dicta quae deleniti impedit, laborum consequuntur quaerat ab officia voluptatibus obcaecati nostrum. Accusamus eos voluptas quae.</p>
+        </article>
+
+
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Layout De Exemplo</p>
+    </footer>
+</div>
+</body>
+</html>
