@@ -1,2 +1,3 @@
 # aulas-front-end
- aulas realizadas no curso programador web
+ 
+ Os arquivos disponíveis neste repositorio foram desenvolvidos durante meus estudos de HTML e CSS
